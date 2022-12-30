@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./diseño.css">
+    <script defer src="https://app.embed.im/snow.js"></script>
+  </head>
+<body> 
+<nav class="navbarprincipal navbar navbar-expand-lg bg-info sticky-top">
+  <div class="container-fluid"><a class="navbar-brand" href="./index.html"><img class="logonavbar" src="https://fueradeseries.com/wp-content/uploads/2022/11/Logo_FDS-1024x1024-1-526x526.png" alt="fds"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+        <li>
+          <form class="me-1" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </li>
+        <li class="nav-item">
+          <a class="text-white btn btn-info" href="./indexaboutus.html">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white btn btn-info" href="./index.html#noticias">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white btn btn-info" href="./index.html#criticas">Criticas</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white btn btn-info" href="./index.html#articulos">Articulos</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white btn btn-info" href="./index.html#contactos">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="text-white btn btn-info " data-bs-toggle="modal" data-bs-target="#Modal1">Login</button>
+        </li>
+        <li class="nav-item">
+          <a class="text-white btn btn-info" href="./indexform.html">Registrarse</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-info">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="Modal1">Ingresa a tu cuenta</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="LoginEmail" class="form-label text-white"><strong>Email</strong></label>
+            <input type="email" class="form-control" id="LoginEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="LoginPassword" class="form-label text-white"><strong>Contraseña</strong></label>
+            <input type="password" class="form-control" id="LoginPassword">
+          </div>
+          <div class="mt-3 mb-3">
+            <a href="" class="text-white"><strong>Olvidaste tu Contraseña? Haz click aqui</strong></a>
+          </div>
+        </form>
+        <form action="./indexform.html">
+          <span class=" text-white"><strong>No tienes cuenta?</strong></span>
+          <button type="submit" class=" btn btn-warning" data-bs-toggle="modal"
+            data-bs-target="#Modal2"><strong>Registrarse</strong></button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Salir</button>
+        <button type="button" class="btn btn-primary bg-success">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <header>
+      <h1 class="mt-5 ms-5 text-info text-center text-md-start">
+          Fuera de serie
+      </h1>
+      <hr class="ms-5 me-5">
+  </header>
+
+    <main class="bg-info fs-5 m-5 p-5" style="border-radius: 2%;">
+        <div class="mb-3">
+        <label for="RegisterNombre" class="form-label text-white"><strong>Nombre</strong></label>
+        <input type="text" class="form-control" id="RegisterNombre" required>
+        </div>
+        <div class="mb-3">
+        <label for="RegisterApellido" class="form-label text-white"><strong>Apellido</strong></label>
+        <input type="text" class="form-control" id="RegisterApellido" required>
+        </div>
+        <div class="mb-3">
+        <label for="RegisterEmail" class="form-label text-white"><strong>Email</strong></label>
+        <input type="email" class="form-control" id="RegisterEmail" required>
+        </div>
+        <div class="mb-3">
+        <label for="RegisterPassword" class="form-label text-white"><strong>Contraseña</strong></label>
+        <input type="password" class="form-control" id="RegisterPassword" required>
+        </div>
+        <div class="mb-3">
+        <label for="RegistroFecha" class="form-label text-white"><strong>Fecha de nacimiento:</strong></label>
+        <input type="date" class="form-control" id="RegistroFecha">
+        </div>
+        <div class="text-white mb-4 mt-5">
+            <label for="idgenero"><strong>Género: </strong></label>
+            <select id="idgenero">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="Check1">
+        <label class="form-check-label text-white" for="Check1">Acepto los términos y condiciones.</label>
+        </div>
+        
+        <span class="d-flex justify-content-between">
+        <a class="text-white pt-4" href="">Leer términos y condiciones.</a>
+
+        <form action="./index.html">
+            <div>
+                <button type="submit" class="fs-3 btn btn-secondary bg-danger" data-bs-dismiss="modal">Salir</button>
+
+                <!-- Modal Registro Exitoso -->
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-success">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalToggleLabel"></h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="fs-1 modal-body text-white d-flex justify-content-center">
+                          Registro Exitoso!
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-primary bg-danger" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Salir</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="fs-3 btn btn-primary bg-success" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Registrarse</a>
+            </div>
+        </form>
+        </span>
+    </main>
+
+    <!-- Footer-->
+    <footer>
+      <div class="bg-info d-flex justify-content-around">
+        <div class="logofds">
+          <img src="https://fueradeseries.com/wp-content/themes/fuera-de-series/img/logo-fds-white.png" alt="fds" width="100" height="100">
+        </div>
+  
+        <div class="menunavfooter ms-auto "> <!-- Menu Nav Footer -->
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Podcasts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Newsleter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Criticas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Artículos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Encuentra Series</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>

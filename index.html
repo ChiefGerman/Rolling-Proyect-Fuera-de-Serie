@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuera de Serie</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Pavanam&family=Roboto+Condensed:wght@300&family=Tenali+Ramakrishna&display=swap');
+  </style>
+  <link rel="stylesheet" href="./diseño.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script defer src="https://app.embed.im/snow.js"></script>
+</head>
+
+<body>
+  <nav class="navbarprincipal navbar navbar-expand-lg bg-info sticky-top">
+    <div class="container-fluid"><a class="navbar-brand" href="./index.html"><img class="logonavbar" src="https://fueradeseries.com/wp-content/uploads/2022/11/Logo_FDS-1024x1024-1-526x526.png" alt="fds"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+          <li>
+            <form class="me-1" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="text-white btn btn-info" href="./indexaboutus.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white btn btn-info" href="./index.html#noticias">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white btn btn-info" href="./index.html#criticas">Criticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white btn btn-info" href="./index.html#articulos">Articulos</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white btn btn-info" href="./index.html#contactos">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="text-white btn btn-info" data-bs-toggle="modal" data-bs-target="#Modal1">Login</button>
+          </li>
+          <li class="nav-item">
+            <a class="text-white btn btn-info" href="./indexform.html">Registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-info">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-white" id="Modal1">Ingresa a tu cuenta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="LoginEmail" class="form-label text-white"><strong>Email</strong></label>
+              <input type="email" class="form-control" id="LoginEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="LoginPassword" class="form-label text-white"><strong>Contraseña</strong></label>
+              <input type="password" class="form-control" id="LoginPassword">
+            </div>
+            <div class="mt-3 mb-3">
+              <a href="" class="text-white"><strong>Olvidaste tu Contraseña? Haz click aqui</strong></a>
+            </div>
+          </form>
+          <form action="./indexform.html">
+            <span class=" text-white"><strong>No tienes cuenta?</strong></span>
+            <button type="submit" class=" btn btn-warning" data-bs-toggle="modal"
+              data-bs-target="#Modal2"><strong>Registrarse</strong></button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Salir</button>
+          <button type="button" class="btn btn-primary bg-success">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container mt-5 mb-5">
+      <div class="row d-flex align-items-center header1">
+        <div class="col-12 col-md-6">
+          <img class="logoheader" src="https://fueradeseries.com/wp-content/uploads/2022/11/Logo_FDS-1024x1024-1-526x526.png" alt="fds">
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="mb-24 mb-sm-12 mb-md-20 h0">Fuera de Series</h2>
+          <p style="font-size: 20px;">Desde hace 15 años, <strong> Fuera de Series</strong> te trae toda la actualidad del mundo de las series de televisión.</p>
+          <p style="font-size: 20px">Escúchanos en:</p>
+          
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-spotify" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="9" />
+              <path d="M8 11.973c2.5 -1.473 5.5 -.973 7.5 .527" />
+              <path d="M9 15c1.5 -1 4 -1 5 .5" />
+              <path d="M7 9c2 -1 6 -2 10 .5" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="5" cy="19" r="1" />
+              <path d="M4 4a16 16 0 0 1 16 16" />
+              <path d="M4 11a9 9 0 0 1 9 9" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-soundcloud" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M17 11h1c1.38 0 3 1.274 3 3c0 1.657 -1.5 3 -3 3l-6 0v-10c3 0 4.5 1.5 5 4z" />
+              <line x1="9" y1="8" x2="9" y2="17" />
+              <line x1="6" y1="17" x2="6" y2="10" />
+              <line x1="3" y1="16" x2="3" y2="14" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-apple" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M9 7c-3 0 -4 3 -4 5.5c0 3 2 7.5 4 7.5c1.088 -.046 1.679 -.5 3 -.5c1.312 0 1.5 .5 3 .5s4 -3 4 -5c-.028 -.01 -2.472 -.403 -2.5 -3c-.019 -2.17 2.416 -2.954 2.5 -3c-1.023 -1.492 -2.951 -1.963 -3.5 -2c-1.433 -.111 -2.83 1 -3.5 1c-.68 0 -1.9 -1 -3 -1z" />
+              <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-microphone" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="9" y="2" width="6" height="11" rx="3" />
+              <path d="M5 10a7 7 0 0 0 14 0" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container contenedor">
+    <hr>
+    <section class="row justify-content-center mb-5 section-principal">
+      <div class="py-3 col-12 col-lg-4">
+        <img src="https://fueradeseries.com/wp-content/uploads/2022/11/2022-11-16-Para-Web-1024x768.jpg"
+          class="ImagenStreaming img-fluid" alt="img-streaming">
+        <div class="card card-item-description">
+          <h5>Streaming: Agenda de Series del 16 de Noviembre de 2022</h5>
+          <p>C.J. Navas comenta la nueva serie sobre los entresijos de Hollywood que prepara Seth Rogen para Apple
+            TV+, las fechas del etreno en Españade "Entrevista con el Vampiro" en AMC+ y "Mentes
+            Criminales:Evolution" en AXN, la reposición de "The Shield" en AXN NOW desde el 1 de diciembre y muchas
+            noticias más en su repaso diario al mundo de las series de televisión</p>
+        </div>
+      </div>
+      <div class="py-3 col-12 col-lg-8 row justify-content-center">
+        <div class="col-12 card2 row ">
+          <div class="col-12 col-lg-6 col-xl-4">
+            <img src="https://fueradeseries.com/wp-content/uploads/2022/11/Power-Rankings-1-300x225.jpg"
+              class="img-fluid img-card2" alt="img-card2">
+          </div>
+          <div class="card-content my-3  col-12 col-lg-6 col-xl-8 ">
+            <h5>Los Power Rankings de la semana: La Alianza Rebelde vence a los Targaryen</h5>
+            <p>"The White Lotus" y "The Peripheral" proagoniza la mayor subida de la semana y HBO Max coloca hasta
+              cinco de sus series en nuestro Top 10 semanal</p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="item3">
+            <div class="card-header-3">
+              <h5>Streaming: Agenda de Series del 17 de Noviembre de 2022</h5>
+              <hr>
+            </div>
+            <div class="card-header-3">
+              <h5>Streaming: Agenda de Series del 14 de Noviembre de 2022</h5>
+              <hr>
+            </div>
+            <div class="card-header-3">
+              <h5>Streaming: Agenda de Series del 11 de Noviembre de 2022</h5>
+              <hr>
+            </div>
+            <div class="card-header-3">
+              <h5>Streaming: Agenda de Series del 10 de Noviembre de 2022</h5>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <h3 id="noticias">Noticias</h3>
+    <hr>
+    
+    <section class="row justify-content-center justify-content-lg-start">
+      <div class="col-12 col-lg-9 row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5  justify-content-center">
+        
+        <a href="./PrimeraCardNoticias.html" style="color: black;">
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/09/Para-Web-18-300x225.jpg"
+            class="card-img-top img-seccion" alt="Movistar">
+          <div class="card seccion-descripcion">
+            <h5>Movistar Plus+ presenta sus estrenos...</h5>
+            <p>Al estreno de 'This England' con Kenneth Branagh se suma el de las cuartas temporadas de 'Babylon
+              Berlin' y 'Fantasmas'</p>
+          </div>
+        </div></a>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/09/Para-Web-17-300x225.jpg"
+            class="card-img-top img-seccion" alt="AppleTV">
+          <div class="card seccion-descripcion">
+            <h5>Apple TV+ estrena ‘Sidney Poitier’</h5>
+            <p>El documental sobre el mítico actor está producido por Oprah Winfrey y cuenta con entrevistas a Denzel
+              Washington, Halle Berry, Robert Redford...</p>
+          </div>
+        </div>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/09/Para-Web-16-300x225.jpg"
+            class="card-img-top img-seccion" alt="Atresmedia">
+          <div class="card seccion-descripcion">
+            <h5>Atresmedia presenta sus próximos estrenos en...</h5>
+            <p>De la continuación de 'La novia Gitana' a sendos documentales sobre Bárbara Rey y Nadiuska, el grupo sigue dotando de contenido a su plataforma</p>
+          </div>
+        </div>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/09/Para-Web-2-2-300x225.jpg"
+            class="card-img-top img-seccion" alt="SagradaFamilia">
+          <div class="card seccion-descripcion">
+            <h5>‘Sagrada Familia’: la serie de Manolo Caro muestra su primer...</h5>
+            <p>Al estreno de 'This England' con Kenneth Branagh se suma el de las cuartas temporadas de 'Babylon
+              Berlin' y 'Fantasmas'</p>
+          </div>
+        </div>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/09/Para-Web-1-7-300x225.jpg"
+            class="card-img-top img-seccion" alt="HBO">
+          <div class="card seccion-descripcion">
+            <h5>HBO cumple 50 años y lo celebra con la campaña ‘Fifty Years...</h5>
+            <p>A lo largo de los 50 días que preceden al aniversario, HBO compartirá tráilers, anuncios de reparto, imágenes inéditas, fragmentos de guiones y más de sus próximas producciones</p>
+          </div>
+        </div>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/09/Para-Web-15-300x225.jpg"
+            class="card-img-top img-seccion" alt="Wonderwoman">
+          <div class="card seccion-descripcion">
+            <h5>Disney+ muestra un primer vistazo de ‘La Última’, su primera...</h5>
+            <p>La serie protagonizada por Aitana Ocaña y Miguel Bernardeau se estrenará el próximo mes de diciembre en la plataforma</p>
+          </div>
+        </div>
+      </div>
+      <aside class="d-none d-md-flex col-3">
+        <div class="publicidad">
+          <img src="https://s0.2mdn.net/simgad/11236018187187597822" alt="img-publicidad">
+        </div>
+      </aside>
+
+
+    </section>
+    <br>
+    <h3 id="criticas">Críticas</h3>
+    <hr>
+
+    <section class="row justify-content-center justify-content-lg-start">
+      <div class="col-12 col-lg-9 row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5  justify-content-center">
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/06/Para-Web-2-300x225.jpg"
+            class="card-img-top img-seccion" alt="Thisisus">
+          <div class="card seccion-descripcion">
+            <h5>Crítica ‘This is us’: los Pearson siempre fueron tres y mejor...</h5>
+            <p>El capítulo con menos lágrimas de toda la serie es la season finale.</p>
+          </div>
+        </div>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/02/Diseno-para-Web-2-1-300x225.jpg"
+            class="card-img-top img-seccion" alt="ColegioAbbot">
+          <div class="card seccion-descripcion">
+            <h5>Crítica: ‘Colegio Abbot’, la comedia que esperamos con...</h5>
+            <p>Disney+ estrena por fin en nuestro país 'Abbot Elementary', la comedia revelación este 2022 en Estados Unidos</p>
+          </div>
+        </div>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/05/Para-Web-14-300x225.jpg"
+            class="card-img-top img-seccion" alt="WorkinMoms">
+          <div class="card seccion-descripcion">
+            <h5>Crítica ‘Workin’ Moms’: la ambición frente al instinto...</h5>
+            <p>La serie en la que las mujeres quieren triunfar como madres y profesionales pero no saben escoger en qué terreno desean brillar con más luz.</p>
+          </div>
+        </div>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/05/Para-Web-13-300x225.jpg"
+            class="card-img-top img-seccion" alt="GraceandFrankie">
+          <div class="card seccion-descripcion">
+            <h5>Crítica ‘Grace and Frankie‘: una oda a la amistad en su estado más puro...</h5>
+            <p>Una serie conmovedora sobre la aceptación de un amigo sin límites.</p>
+          </div>
+        </div>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/05/Para-Web-3-1-300x225.jpg"
+            class="card-img-top img-seccion" alt="HBO">
+          <div class="card seccion-descripcion">
+            <h5>Crítica ‘A million little things‘: la familia ¿nace o se hace?</h5>
+            <p>La amistad: algo tan preciado que puede destruirnos o mantenernos a flote a partes iguales</p>
+          </div>
+        </div>
+
+        <div class="card-seccion">
+          <img src="https://fueradeseries.com/wp-content/uploads/2022/05/Para-Web-1-300x225.jpg"
+            class="card-img-top img-seccion" alt="Wonderwoman">
+          <div class="card seccion-descripcion">
+            <h5>Crítica ‘The Last Kingdom‘: el destino lo es todo</h5>
+            <p>La historia de Uhtred de Bebbanburg un desgraciado con mucha suerte que nos tiene conquistados. Pura contradicción.</p>
+          </div>
+        </div>
+      </div>
+      <aside class="d-none d-md-flex col-3">
+        <div class="publicidad">
+          <img src="https://s0.2mdn.net/simgad/11236018187187597822" alt="img-publicidad">
+        </div>
+      </aside>
+    </section>
+
+  <br>
+  <h3 id="articulos">Artículos</h3>
+  <hr>
+
+  <section class="row justify-content-center justify-content-lg-start">
+    <div class="col-12 col-lg-9 row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5  justify-content-center">
+      <div class="card-seccion">
+        <img src="https://fueradeseries.com/wp-content/uploads/2021/07/Better-Call-Saul-300x200.jpg""
+          class="card-img-top img-seccion" alt="BetterCallSaul">
+        <div class="card seccion-descripcion">
+          <h5>Todo lo que sabemos de la temporada 6 de ‘Better Call Saul’</h5>
+          <p>Esta entrega cerrará la historia de la transformación de Jimmy McGill en Saul Goodman, el mítico personaje procedente de ‘Breaking Bad’</p>
+        </div>
+      </div>
+
+      <div class="card-seccion">
+        <img src="https://fueradeseries.com/wp-content/uploads/2022/04/Para-Web-17-300x225.jpg"
+          class="card-img-top img-seccion" alt="MejoresComedias90">
+        <div class="card seccion-descripcion">
+          <h5>In our opinion: Las mejores comedias de la década de los 90</h5>
+          <p>Las sitcoms con las que disfrutamos desde 1990 hasta el año 2000.</p>
+        </div>
+      </div>
+
+      <div class="card-seccion">
+        <img src="https://fueradeseries.com/wp-content/uploads/2022/04/Para-Web-1-3-300x225.jpg"
+          class="card-img-top img-seccion" alt="MejoresComediasHastalos90">
+        <div class="card seccion-descripcion">
+          <h5>In our opinion: Las mejores comedias hasta los 90</h5>
+          <p>Las series que nos hicieron reír de los 80 a los 90.</p>
+        </div>
+      </div>
+
+      <div class="card-seccion">
+        <img src="https://fueradeseries.com/wp-content/uploads/2022/03/Para-Web-1-10-300x225.jpg"
+          class="card-img-top img-seccion" alt="MejoresComediasHastalos80">
+        <div class="card seccion-descripcion">
+          <h5>In our opinion: Las mejores comedias hasta los 80</h5>
+          <p>Lo que nos parecía gracioso hasta 1980.</p>
+        </div>
+      </div>
+
+      <div class="card-seccion">
+        <img src="https://fueradeseries.com/wp-content/uploads/2022/03/Para-Web-5-1-300x225.jpg"
+          class="card-img-top img-seccion" alt="SeriesdeAbogados">
+        <div class="card seccion-descripcion">
+          <h5>In our opinion: Las mejores series de abogados de la televisión</h5>
+          <p>¡Protesto enérgicamente! Ah bueno, si es enérgicamente...</p>
+        </div>
+      </div>
+
+      <div class="card-seccion">
+        <img src="https://fueradeseries.com/wp-content/uploads/2022/03/Disen%CC%83o-para-Web-9-300x225.jpg"
+          class="card-img-top img-seccion" alt="LOLSebastianManiscalco">
+        <div class="card seccion-descripcion">
+          <h5>LOL: Sebastian Maniscalco El rey de la expresividad cómica</h5>
+          <p>El cómico que se mueve más en el escenario que en una clase de crossfit.</p>
+        </div>
+      </div>
+    </div>
+    <aside class="d-none d-md-flex col-3">
+      <div class="publicidad">
+        <img src="https://s0.2mdn.net/simgad/11236018187187597822" alt="img-publicidad">
+      </div>
+    </aside>
+  </section>
+
+<section>
+  <a name="contactos"></a>
+  <div>
+      <h1>Contacto</h1>
+      <div class="contact-wrapper">
+          <div class="contact-form">
+              <form action="">
+                  <p>
+                      <label>Nombre</label>
+                      <input type="text">
+                  </p>
+                  <p>
+                      <label>Email </label>
+                      <input type="email">
+                  </p>
+                  <p>
+                      <label>Telefono</label>
+                      <input type="tel">
+                  </p>
+                  <p>
+                      <label>Asunto</label>
+                      <input type="text">
+                  </p>
+                  <p class="block">
+                     <label>Mensaje</label> 
+                      <textarea name="message" rows="3"></textarea>
+                  </p>
+                  <p class="block bg-info">
+                      <button>
+                          Enviar
+                      </button>
+                  </p>
+              </form>
+          </div>
+          <div class="fs-5">
+              <h4>Mas información</h4>
+              <p>Si quieres ponerte en contacto con nosotros para hacernos llegar una nota de prensa, sugerencia o pista, puedes hacerlo rellenando el siguiente formulario. Para enviar tu currículum, escribe a:
+              </p>
+              <a href="">info@fueradeseries.com</a>
+          </div>
+      </div>
+  </div>
+</section>
+</main>
+
+  <footer>
+    <div class="bg-info d-flex justify-content-around">
+      <div class="logofds">
+        <img src="https://fueradeseries.com/wp-content/themes/fuera-de-series/img/logo-fds-white.png" alt="fds"
+          width="100" height="100">
+      </div>
+      <div class="menunavfooter ms-auto ">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Podcasts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Newsleter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Criticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Artículos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Encuentra Series</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+</html>
