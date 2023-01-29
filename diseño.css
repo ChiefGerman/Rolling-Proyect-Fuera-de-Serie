@@ -8,7 +8,7 @@
 
 body{ 
     font-family: 'Roboto Condensed', sans-serif !important;
-    background-image: url(./fondo.jpg);
+    background-image: url(./img/fondo.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -228,17 +228,13 @@ cursor: pointer;
 }
 
 .logofds{
-    padding-left: 10%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
 }
 
 .menunavfooter ul li{
     display: inline-block;
     list-style: none;
-    margin: 5px;
-    margin-top: 2rem;
-    padding-right: 2rem;
 }
 .contenido ul li{
     list-style: none;
@@ -250,5 +246,17 @@ cursor: pointer;
         justify-content: space-around;
         align-items: column;
     }
+}
+
+.avatar-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
