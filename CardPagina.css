@@ -14,15 +14,6 @@ body{
     background-position: center;
 }
 
-.logonavbar{
-    background-image: url('https://fueradeseries.com/wp-content/uploads/2022/11/Logo_FDS-1024x1024-1-526x526.png');
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-    height: 50px;
-    width: 50px;
-}
-
 .logoheader{
     border-radius: 50%;
     object-fit: cover;
@@ -98,13 +89,6 @@ body{
 }
 .detalles{
     cursor: pointer;
-}
-
-.menunavfooter ul li{
-    list-style: none;
-    margin: 5px;
-    margin-top: 2rem;
-    padding-right: 2rem;
 }
 
 @media (max-width:768px){
