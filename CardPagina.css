@@ -130,3 +130,11 @@ body{
         max-width: 100% !important;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .tienda {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
